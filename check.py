@@ -18,13 +18,10 @@ def check(str):
         return False
     return True
 
-def main():
+if __name__ == '__main__':
     str = input()
 
     if(check(str)):
         print("True")
     else:
         print("False")
-
-main()
-
