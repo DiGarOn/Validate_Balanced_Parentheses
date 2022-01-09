@@ -1,3 +1,10 @@
+/*
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. 
+An input string is valid if:
+- Open brackets are closed by the same type of brackets.
+- Open brackets are closed in the correct order.
+- Note that an empty string is also considered valid.
+*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,6 +15,7 @@ using namespace std;
 
 
 bool check(string str) {
+    if(str.size() == 0) return true;
     bool res;
 
     vector<char> s;
